@@ -1,0 +1,70 @@
+.footer{
+    display: block;
+    .content{
+        padding-top: rem(30px);
+        position: relative;
+        padding-left: rem(225px);
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+}
+
+.footer__logo{
+    position: absolute;
+    top: rem(15px);
+    left: 0;
+    filter: grayscale(100%);
+    width: rem(140px);
+    height: rem(90px);
+    @include tablets{
+        left: rem(10px);
+    }
+}
+
+.footer__logo-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer__lease, .services{
+    font-size: rem(12px);
+    line-height: rem(18px);
+}
+
+.lease__title-link{
+    color: #000000;
+    text-decoration-line: underline;
+}
+
+.lease__link, .services__link{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer__about{
+    display: flex;flex-direction: column;
+    font-size: rem(12px);
+}
+
+.footer__company, .footer__contacts{
+    margin-bottom: rem(20px);
+    color: #000000;
+}
+
+.footer__phone{
+    .phone{
+        margin-top: 0;
+    }
+    .btn__link{
+        margin-top: rem(20px);
+    }
+}
+
+.copy{
+    margin-top: rem(20px);
+    text-align: right;
+    font-size: rem(11px);
+}
+
+

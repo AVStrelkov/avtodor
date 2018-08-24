@@ -1,3 +1,22 @@
+//variables
+$blue: #00e2ff;
+$yellow: #ffcc00;
+$grey: #dfdfdf;         //bg nav
+$greyLight: #edf0f2;    //bg sidebar and footer
+$bgcolor: #ffffff;      //bg color
+$content: 1024px;
+
+//layout
+
 @import "fonts";
+@import "blocks/mixins";
+@import "blocks/layout";
+
+//styles
 
 @import "blocks/header";
+@import "blocks/menu-list";
+@import "blocks/slider";
+@import "blocks/container";
+@import "blocks/sidebar";
+@import "blocks/footer";

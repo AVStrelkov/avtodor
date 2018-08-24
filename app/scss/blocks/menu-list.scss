@@ -1,0 +1,49 @@
+.menu{
+    height: rem(35px);
+    width: 100%;
+    display: flex;
+    font-size: rem(13px);
+    align-items: center;
+    justify-content: space-around;
+    // flex-flow: row wrap;
+    background-color: $grey;
+    @include tablets{
+        font-size: rem(10px);
+    }
+}
+
+.menu__block{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__home{
+    background-color: $grey;
+    height: rem(35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(50px);
+    &:hover{
+        background-color: $yellow;
+    }
+}
+
+.menu__img{
+    display: block;
+    width: rem(20px);
+    height: rem(20px);
+}
+
+.menu__link{
+    padding: 0 rem(10px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    &:hover{
+        background-color: $yellow;
+    }
+}

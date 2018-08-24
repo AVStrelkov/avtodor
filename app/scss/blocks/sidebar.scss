@@ -1,0 +1,39 @@
+.sidebar-title{
+    text-transform: uppercase;
+    padding: rem(5px) rem(10px);
+    border-left: rem(9px) solid $yellow;
+    @include font(semibold);
+}
+
+.sidebar{
+    width: 100%;
+}
+
+.sidebar__nav{
+    margin-top: rem(15px);
+}
+
+.sidebar__block{
+    margin-top: 1px;
+}
+
+.sidebar__link{
+    text-decoration: none;
+    @include font(semibold);
+    padding: rem(3px) rem(5px);
+    display: flex;
+    align-items: center;
+    background-color: $greyLight;
+    height: 100%;
+    &:hover{
+        background-color: $grey;
+    }
+}
+
+.sidebar__text{
+    color: #000000;
+    margin-left: rem(10px);
+    @include tablets{
+        font-size: rem(13px);
+    }
+}
