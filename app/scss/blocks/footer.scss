@@ -3,7 +3,7 @@
     .content{
         padding-top: rem(30px);
         position: relative;
-        padding-left: rem(225px);
+        padding-left: rem(235px);
         box-sizing: border-box;
         justify-content: space-between;
     }
@@ -29,6 +29,9 @@
 .footer__lease, .services{
     font-size: rem(12px);
     line-height: rem(18px);
+    @include phones{
+        display: none;
+    }
 }
 
 .lease__title-link{
@@ -55,6 +58,14 @@
 .footer__phone{
     .phone{
         margin-top: 0;
+        @include phones{
+            display: block;
+        }
+    }
+    .btn{
+        @include phones{
+            display: block;
+        }
     }
     .btn__link{
         margin-top: rem(20px);

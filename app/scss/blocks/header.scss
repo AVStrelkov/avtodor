@@ -3,6 +3,13 @@
     height: rem(180px);
     display: flex;
     flex-direction: column;
+    margin-bottom: rem(-10px);
+    @include tablets{
+        margin-bottom: rem(-12px);
+    }
+    @include phones{
+        margin-bottom: 0;
+    }
 }
 
 .header__top{
@@ -79,6 +86,11 @@
     display: flex;
     flex-direction: column;
     width: rem(255px);
+    @include phones{
+        align-items: flex-end;
+        width: rem(50px);
+        margin-right: rem(10px);
+    }
 }
 
 .phone{
@@ -89,12 +101,18 @@
     @include tablets{
         font-size: rem(23px);
     }
+    @include phones{
+        display: none;
+    }
 }
 
 .btn{
     margin-top: rem(10px);
     background-color: $yellow;
     text-transform: uppercase;
+    @include phones{
+        display: none;
+    }
 }
 
 .btn__link{
@@ -104,6 +122,47 @@
     text-decoration: none;
     color: #000000;
     @include tablets{
-        padding: 12px 30px;
+        padding: rem(12px) rem(30px);
     }
+}
+
+.phone-pic{
+    display: none;
+    width: rem(50px);
+    height: rem(50px);
+    // background: #000;
+    margin-top: rem(15px);
+    @include phones{
+        display: none;
+    }
+}
+
+.phone-img{
+    width: 100%;
+    height: 100%;
+}
+
+.min-menu-link{
+    display: none;
+    width: rem(40px);
+    height: rem(40px);
+    // background: #000;
+    margin-top: rem(20px);
+    @include phones{
+        display: block;
+    }
+    &:hover{
+        .min-menu-row{
+            box-shadow: 0px 0px 8px 2px #ffffff;
+        }
+    }
+}
+
+.min-menu-row{
+    display: block;
+    width: 100%;
+    height: rem(8px);
+    border-radius: rem(4px);
+    background-color: #000000;
+    margin-bottom: rem(8px);
 }

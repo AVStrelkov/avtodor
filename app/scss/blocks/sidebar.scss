@@ -7,14 +7,31 @@
 
 .sidebar{
     width: 100%;
+    @include phones{
+        margin-bottom: rem(15px);
+    }
 }
 
 .sidebar__nav{
+    width: 100%;
     margin-top: rem(15px);
+    @include phones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
 }
 
 .sidebar__block{
     margin-top: 1px;
+    @include phones{
+        flex: 1 1 rem(220px);
+        margin: 1px 1px;
+        text-align: center;
+        min-width: rem(200px);
+    }
 }
 
 .sidebar__link{
@@ -28,6 +45,11 @@
     &:hover{
         background-color: $grey;
     }
+    @include phones{
+        display: flex;
+        justify-content: center;
+        padding: rem(5px) rem(10px);
+    }
 }
 
 .sidebar__text{
@@ -35,5 +57,8 @@
     margin-left: rem(10px);
     @include tablets{
         font-size: rem(13px);
+    }
+    @include phones{
+        font-size: rem(18px);
     }
 }
